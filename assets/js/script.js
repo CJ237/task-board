@@ -168,10 +168,9 @@ function handleDrop(event, ui) {
       project.status = newStatus;
     }
   }
-  
+  localStorage.setItem('projects', JSON.stringify(projects));
   renderTaskList();
 }
-
 
 
 // Todo: when the page loads, render the task list, add event listeners, make lanes droppable, and make the due date field a date picker
@@ -197,19 +196,19 @@ $(document).ready(function () {
     buttons: {
       'Add Task': handleAddTask,
     },
-    renderTaskList,
+    
   });
 
   $('#datepicker').datepicker({
     changeMonth: true,
     changeYear: true,
   });
-
-  renderTaskList();
+  
+  
 
   $('.lane').droppable({
     accept: '.draggable',
     drop: handleDrop,
   });
-  
+  renderTaskList();
 });
