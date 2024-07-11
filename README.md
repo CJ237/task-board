@@ -11,7 +11,7 @@ This project is a task board to manage all the projects
 ![addTask](https://github.com/CJ237/task-board/assets/79546904/de9180d8-4ba6-43d8-bc66-96887deb70c7)
 
 ## GitHub Pages
-
+https://cj237.github.io/task-board/
 
 
 
