@@ -1,5 +1,4 @@
 
-let projects = [];
 //todo create generateTaskID function to generate a unique ID
 function generateTaskID(){
   return crypto.randomUUID();
